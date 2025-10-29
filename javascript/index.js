@@ -22,6 +22,10 @@ function printTime() {
 
 function printMinutes() {
   // ... your code goes here
+  const minutes = chronometer.getMinutes();
+  const minutesString = chronometer.computeTwoDigitNumber(minutes);
+  minDecElement.textContent = minutesString[0];
+  minUniElement.textContent = minutesString[1];
 
 }
 
