@@ -48,10 +48,10 @@ function printMilliseconds() {
 
 function printSplit() {
   // ... your code goes here
-  const splitTime = chronometer.split();
-  const li = document.createElement('li');
-  li.textContent = splitTime;
-  splitsElement.appendChild(li);
+const splitTime = chronometer.split();
+const liElement = document.createElement('li');
+liElement.textContent = splitTime;
+splitsElement.appendChild(liElement);
 }
 
 function clearSplits() {
@@ -61,18 +61,26 @@ function clearSplits() {
 
 function setStopBtn() {
   // ... your code goes here
+  btnLeftElement.textContent = 'STOP';
+  btnLeftElement.className = 'btn stop';
 }
 
 function setSplitBtn() {
   // ... your code goes here
+  btnRightElement.textContent = 'SPLIT';
+  btnRightElement.className = 'btn split';
 }
 
 function setStartBtn() {
   // ... your code goes here
+  btnLeftElement.textContent = 'START';
+  btnLeftElement.className = 'btn start';
 }
 
 function setResetBtn() {
   // ... your code goes here
+  btnRightElement.textContent = 'RESET';
+  btnRightElement.className = 'btn reset';
 }
 
 // Start/Stop Button
