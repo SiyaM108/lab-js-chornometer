@@ -56,6 +56,7 @@ function printSplit() {
 
 function clearSplits() {
   // ... your code goes here
+  splitsElement.innerHTML = '';
 }
 
 function setStopBtn() {
