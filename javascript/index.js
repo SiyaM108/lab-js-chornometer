@@ -31,8 +31,10 @@ function printMinutes() {
 
 function printSeconds() {
   // ... your code goes here
-
-
+  const seconds = chronometer.getSeconds();
+  const secondsString = chronometer.computeTwoDigitNumber(seconds);
+  secDecElement.textContent = secondsString[0];
+  secUniElement.textContent = secondsString[1];
 }
 
 // ==> BONUS
