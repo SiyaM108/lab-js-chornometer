@@ -40,8 +40,10 @@ function printSeconds() {
 // ==> BONUS
 function printMilliseconds() {
   // ... your code goes here
-
-
+  const milliseconds = chronometer.getMilliseconds();
+  const millisecondsString = chronometer.computeTwoDigitNumber(milliseconds);
+  milDecElement.textContent = millisecondsString[0];
+  milUniElement.textContent = millisecondsString[1];
 }
 
 function printSplit() {
