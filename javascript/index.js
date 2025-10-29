@@ -15,23 +15,32 @@ const splitsElement = document.getElementById('splits');
 
 function printTime() {
   // ... your code goes here
+  printMinutes();
+  printSeconds();
+  printMilliseconds();
 }
 
 function printMinutes() {
   // ... your code goes here
+
 }
 
 function printSeconds() {
   // ... your code goes here
+
+
 }
 
 // ==> BONUS
 function printMilliseconds() {
   // ... your code goes here
+
+
 }
 
 function printSplit() {
   // ... your code goes here
+
 }
 
 function clearSplits() {
@@ -57,6 +66,8 @@ function setResetBtn() {
 // Start/Stop Button
 btnLeftElement.addEventListener('click', () => {
   // ... your code goes here
+
+
 });
 
 // Reset/Split Button
