@@ -100,4 +100,11 @@ btnLeftElement.addEventListener('click', () => {
 // Reset/Split Button
 btnRightElement.addEventListener('click', () => {
   // ... your code goes here
+  if(btnRightElement.classList.contains('reset')){
+    chronometer.reset();
+    clearSplits();
+    printTime();
+  } else {
+    printSplit();
+  }
 });
